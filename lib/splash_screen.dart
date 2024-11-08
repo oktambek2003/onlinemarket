@@ -1,6 +1,7 @@
 import 'dart:async';
 
 import 'package:flutter/material.dart';
+import 'package:onlinemarket/features/authencation/screens/onboarding/onboarding.dart';
 import 'package:onlinemarket/home.dart';
 
 class SplashScreen extends StatefulWidget {
@@ -17,7 +18,7 @@ void initState() {
     Timer(Duration(seconds: 3), () {
       // 3 soniyadan so‘ng HomeScreen ekraniga o‘tadi
       Navigator.of(context).pushReplacement(
-        MaterialPageRoute(builder: (_) => MyWidget()),
+        MaterialPageRoute(builder: (_) => OnboardingScreen()),
       );
     });
   }
