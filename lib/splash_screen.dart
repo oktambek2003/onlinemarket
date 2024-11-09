@@ -2,7 +2,6 @@ import 'dart:async';
 
 import 'package:flutter/material.dart';
 import 'package:onlinemarket/features/authencation/screens/onboarding/onboarding.dart';
-import 'package:onlinemarket/home.dart';
 
 class SplashScreen extends StatefulWidget {
   const SplashScreen({super.key});

@@ -1,5 +1,6 @@
 import 'package:get/get.dart';
 import 'package:flutter/cupertino.dart';
+import 'package:onlinemarket/features/authencation/screens/login/login.dart';
 
 class OnboradingController extends GetxController {
   static OnboradingController get instance => Get.find();
@@ -13,11 +14,10 @@ class OnboradingController extends GetxController {
 
   void nextPage() {
     if (currentPageIndex.value == 2) {
-      // Get.to();
+      Get.offAll(const LoginScreen());
     } else {
       int page = currentPageIndex.value + 1;
       pageController.jumpToPage(page);
-          print(currentPageIndex.value);
 
     }
   }
