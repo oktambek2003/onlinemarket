@@ -33,12 +33,12 @@ static const String Lastname = "Last Name";
   static const String orSightUpWith = "Or sign up with";
   static const String iagreeToo = " I Agree too";
   static const String privekyPolicy = "Privecy Policy";
-  static const String termOfUse = "Term Of use";
+  static const String termOfUse = "Term Of Use";
   static const String verificationCode = "VerificationCode";
   static const String resendEmail = "Resend Email";
   static const String resendEmailIn = "Resend Email in";
 
-  static const String signUPtitke = "Let's Create your Accunt";
+  static const String signUPtitle = "Let's Create your Accunt";
   static const String forgetPassowrdTitle = "Forget Passowrd ";
   static const String forgetPassowrdSubTitle =
       "Don't worry sometimes people can forget too,  enter your email and we will send you a password reset link ";

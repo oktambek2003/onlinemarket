@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:onlinemarket/features/authencation/screens/login/login.dart';
-import 'package:onlinemarket/splash_screen.dart';
 import 'package:onlinemarket/utils/thema/thema.dart';
 
 void main() {

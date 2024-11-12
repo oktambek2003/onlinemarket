@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:onlinemarket/common/style/spasing_style.dart';
-import 'package:onlinemarket/common/widget_from_styles/from_divider.dart';
-import 'package:onlinemarket/common/widget_from_styles/from_iconButtom.dart';
+import 'package:onlinemarket/common/widget_login_signup/from_divider.dart';
+import 'package:onlinemarket/common/widget_login_signup/from_iconButtom.dart';
 import 'package:onlinemarket/features/authencation/screens/login/widgets/login_from.dart';
 import 'package:onlinemarket/features/authencation/screens/login/widgets/login_header.dart';
 import 'package:onlinemarket/utils/constants/sizes.dart';
