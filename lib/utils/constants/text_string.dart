@@ -17,9 +17,9 @@ class onlineShopText {
   static const String logintitle =
       "Discover Limetes Choices Unmatched and Convinience";
 
-
-  static const String firsName= "First Name";
-static const String Lastname = "Last Name";
+  static const String firsName = "First Name";
+  static const String Lastname = "Last Name";
+  static const String continueEmail = "Continue";
   static const String email = "Email";
   static const String password = "Password";
   static const String newPassword = "New Passowrd";
