@@ -54,4 +54,6 @@ class onlineShopText {
       "Your accaunt succesfully created!";
   static const String userAccauntSubtitleCreated =
       "Welcome to YOur ultimate Shopping   Destanation. Yout accunt craeted,Unleash the Joy of Seamless Online Shopping!";
+  static const String submit = "Submit";
+    static const String done = "Submit";
 }

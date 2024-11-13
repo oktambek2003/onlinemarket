@@ -5,6 +5,7 @@ import 'package:get/get_connect/http/src/utils/utils.dart';
 import 'package:iconsax/iconsax.dart';
 import 'package:onlinemarket/common/sucses/succes_email/succes_email.dart';
 import 'package:onlinemarket/features/authencation/screens/login/login.dart';
+import 'package:onlinemarket/features/authencation/screens/password_configuration/forget_password.dart';
 import 'package:onlinemarket/utils/constants/colors.dart';
 import 'package:onlinemarket/utils/constants/images_string.dart';
 import 'package:onlinemarket/utils/constants/sizes.dart';
@@ -86,7 +87,9 @@ class onlineShopVerifyEmail extends StatelessWidget {
               SizedBox(
                 width: double.infinity,
                 child: TextButton(
-                    onPressed: () {},
+                    onPressed: () {
+                      Get.to(onlineShopForgetPassword());
+                    },
                     child: const Text(onlineShopText.resendEmail)),
               )
             ],
