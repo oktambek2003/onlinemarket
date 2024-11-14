@@ -1,9 +1,9 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:onlinemarket/features/authencation/controller_on_boarding/onborading_controller.dart';
 import 'package:onlinemarket/utils/constants/sizes.dart';
 import 'package:onlinemarket/utils/device/device_utils.dart';
+
+import '../../../controller/controller_on_boarding/onborading_controller.dart';
 
 class OnboardingSkip extends StatelessWidget {
   const OnboardingSkip({super.key});
@@ -18,6 +18,6 @@ class OnboardingSkip extends StatelessWidget {
             onPressed: () {
               controller.skipPage();
             },
-            child: Text("Skip")));
+            child: const Text("Skip")));
   }
 }

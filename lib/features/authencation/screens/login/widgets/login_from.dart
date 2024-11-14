@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:iconsax/iconsax.dart';
 import 'package:onlinemarket/features/authencation/screens/registrassiya/registratsiya.dart';
+import 'package:onlinemarket/navigation_menu.dart';
 
 import '../../../../../utils/constants/sizes.dart';
 import '../../../../../utils/constants/text_string.dart';
@@ -55,16 +56,18 @@ class OnlineShopFrom extends StatelessWidget {
           SizedBox(
               width: double.infinity,
               child: ElevatedButton(
-                  onPressed: () {}, child: const Text(onlineShopText.signIn))),
+                  onPressed: () {
+                    Get.offAll(const onlineShopNavigationMenu());
+                  },
+                  child: const Text(onlineShopText.signIn))),
           const SizedBox(
             height: onlineShopSizes.spaceBtwItem,
           ),
           SizedBox(
               width: double.infinity,
               child: OutlinedButton(
-                
                   onPressed: () {
-                    Get.to(onlineShopSingUp());
+                    Get.to(const onlineShopSingUp());
                   },
                   child: const Text(onlineShopText.createAccaunt))),
           const SizedBox(

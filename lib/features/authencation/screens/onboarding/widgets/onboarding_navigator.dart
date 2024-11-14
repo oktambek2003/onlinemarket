@@ -1,12 +1,13 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:onlinemarket/features/authencation/controller_on_boarding/onborading_controller.dart';
 import 'package:onlinemarket/utils/constants/colors.dart';
 import 'package:onlinemarket/utils/constants/sizes.dart';
 import 'package:onlinemarket/utils/device/device_utils.dart';
 import 'package:onlinemarket/utils/helpers/helper_function.dart';
 import 'package:smooth_page_indicator/smooth_page_indicator.dart';
+
+import '../../../controller/controller_on_boarding/onborading_controller.dart';
 
 
 class OnboardingNavigatorPage extends StatelessWidget {

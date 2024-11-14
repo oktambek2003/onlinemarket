@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:onlinemarket/features/authencation/controller_on_boarding/onborading_controller.dart';
 import 'package:onlinemarket/features/authencation/screens/onboarding/widgets/onBoarding_skip.dart';
 import 'package:onlinemarket/features/authencation/screens/onboarding/widgets/onboarding_buttom.dart';
 import 'package:onlinemarket/features/authencation/screens/onboarding/widgets/onboarding_navigator.dart';
@@ -9,6 +8,8 @@ import 'package:onlinemarket/utils/constants/images_string.dart';
 import 'package:onlinemarket/utils/constants/sizes.dart';
 import 'package:onlinemarket/utils/constants/text_string.dart';
 import 'package:onlinemarket/utils/helpers/helper_function.dart';
+
+import '../../controller/controller_on_boarding/onborading_controller.dart';
 
 class OnboardingScreen extends StatelessWidget {
   const OnboardingScreen({super.key});
@@ -40,9 +41,9 @@ class OnboardingScreen extends StatelessWidget {
               )
             ],
           ),
-          OnboardingSkip(),
-          OnboardingNavigatorPage(),
-          OnboardingButtom()
+          const OnboardingSkip(),
+          const OnboardingNavigatorPage(),
+          const OnboardingButtom()
 
         ],
       ),

@@ -22,10 +22,10 @@ class LoginScreen extends StatelessWidget {
             child: Column(
               children: [
                 onlineShopHeader(dark: dark),
-                OnlineShopFrom(),
+                const OnlineShopFrom(),
                 onlineShopFlexsible(dark: dark,deviderText: onlineShopText.orSigninWith.capitalize!,),
-                SizedBox(height: onlineShopSizes.spaceBtwSections,),
-                onlineShopSocialButtom()
+                const SizedBox(height: onlineShopSizes.spaceBtwSections,),
+                const onlineShopSocialButtom()
               ],
             )),
       ),

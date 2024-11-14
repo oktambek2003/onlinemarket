@@ -1,8 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:get/get_connect/http/src/utils/utils.dart';
-import 'package:iconsax/iconsax.dart';
+
 import 'package:onlinemarket/common/sucses/succes_email/succes_email.dart';
 import 'package:onlinemarket/features/authencation/screens/login/login.dart';
 import 'package:onlinemarket/features/authencation/screens/password_configuration/forget_password.dart';
@@ -77,7 +76,7 @@ class onlineShopVerifyEmail extends StatelessWidget {
                 width: double.infinity,
                 child: ElevatedButton(
                     onPressed: () {
-                      Get.to(onlineShopSuccesEmail());
+                      Get.to(const onlineShopSuccesEmail());
                     },
                     child: const Text(onlineShopText.continueEmail)),
               ),
@@ -88,7 +87,7 @@ class onlineShopVerifyEmail extends StatelessWidget {
                 width: double.infinity,
                 child: TextButton(
                     onPressed: () {
-                      Get.to(onlineShopForgetPassword());
+                      Get.to(const onlineShopForgetPassword());
                     },
                     child: const Text(onlineShopText.resendEmail)),
               )

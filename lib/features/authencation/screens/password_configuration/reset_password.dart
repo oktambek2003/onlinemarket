@@ -1,7 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:onlinemarket/common/style/spasing_style.dart';
 import 'package:onlinemarket/features/authencation/screens/login/login.dart';
 import 'package:onlinemarket/utils/constants/colors.dart';
 import 'package:onlinemarket/utils/constants/images_string.dart';
@@ -52,14 +51,14 @@ class onlineShopResetPassword extends StatelessWidget {
                 onlineShopText.changeYoourPassowdSubtitle,
                 style: Theme.of(context).textTheme.labelMedium,
               ),
-              SizedBox(height: onlineShopSizes.spaceBtwSections,),
+              const SizedBox(height: onlineShopSizes.spaceBtwSections,),
               SizedBox(
                 width: double.infinity,
                 child: ElevatedButton(
                     onPressed: () {
-                      Get.offAll(LoginScreen());
+                      Get.offAll(const LoginScreen());
                     },
-                    child: Text(onlineShopText.done)),
+                    child: const Text(onlineShopText.done)),
               )
             ],
           ),
