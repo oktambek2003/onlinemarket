@@ -34,7 +34,8 @@ class onlineShopHeader extends StatelessWidget {
                 child: onlineShopCirclular(
                   backgroundColor: onlineShopColors.textWhite.withOpacity(0.1),
                 ),
-              )
+              ),
+              child
             ],
           ),
         ),

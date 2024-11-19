@@ -11,7 +11,7 @@ class onlineShopText {
       "From Our Doorstep to Yours -Swift,Secure and Contactless Delivery!";
 
   static const String homeAppbarTitle = "Good day for shopping";
-  static const String homeAppbarSubTitle = "To'xtayev O'ktambrek";
+  static const String homeAppbarSubTitle = "To'xtayev O'ktambek";
 
   static const String loginSubTitle = "Welcome   back,";
   static const String logintitle =
@@ -55,5 +55,6 @@ class onlineShopText {
   static const String userAccauntSubtitleCreated =
       "Welcome to YOur ultimate Shopping   Destanation. Yout accunt craeted,Unleash the Joy of Seamless Online Shopping!";
   static const String submit = "Submit";
-    static const String done = "Submit";
+  static const String done = "Submit";
+
 }

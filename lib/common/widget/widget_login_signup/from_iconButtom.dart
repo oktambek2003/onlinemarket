@@ -1,9 +1,8 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
-import '../../utils/constants/colors.dart';
-import '../../utils/constants/images_string.dart';
-import '../../utils/constants/sizes.dart';
+import '../../../utils/constants/colors.dart';
+import '../../../utils/constants/images_string.dart';
+import '../../../utils/constants/sizes.dart';
 
 class onlineShopSocialButtom extends StatelessWidget {
   const onlineShopSocialButtom({
@@ -26,7 +25,7 @@ class onlineShopSocialButtom extends StatelessWidget {
                   height: onlineShopSizes.iconMd,
                   image: AssetImage(onlineShopImages.google))),
         ),
-        SizedBox(
+      const  SizedBox(
           width: onlineShopSizes.spaceBtwItem,
         ),
         Container(

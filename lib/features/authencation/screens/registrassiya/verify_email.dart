@@ -2,7 +2,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
-import 'package:onlinemarket/common/sucses/succes_email/succes_email.dart';
+import 'package:onlinemarket/common/widget/sucses/succes_email/succes_email.dart';
 import 'package:onlinemarket/features/authencation/screens/login/login.dart';
 import 'package:onlinemarket/features/authencation/screens/password_configuration/forget_password.dart';
 import 'package:onlinemarket/utils/constants/colors.dart';

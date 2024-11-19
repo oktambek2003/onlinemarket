@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:onlinemarket/common/widget_login_signup/from_divider.dart';
-import 'package:onlinemarket/common/widget_login_signup/from_iconButtom.dart';
+import 'package:onlinemarket/common/widget/widget_login_signup/from_divider.dart';
+import 'package:onlinemarket/common/widget/widget_login_signup/from_iconButtom.dart';
 import 'package:onlinemarket/features/authencation/screens/registrassiya/widgets/SignIn_header.dart';
 import 'package:onlinemarket/features/authencation/screens/registrassiya/widgets/SingIn_checbox.dart';
 import 'package:onlinemarket/features/authencation/screens/registrassiya/widgets/sign_in_create_buttom.dart';
