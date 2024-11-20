@@ -14,14 +14,13 @@ class onlineShopImages {
 
   static const String staticSucsessIllusration = "assets/images/sucsess.png";
   static const String verifyIllustration = "assets/images/NGI5ODMucG5n.png";
-    static const String ProductsIllustration =
-      "assets/images/NGI5ODMucG5n.png";
+  static const String ProductsIllustration = "assets/images/NGI5ODMucG5n.png";
   static const String deliveredINPlaneIllustration =
       "assets/images/on_boarding_images/MGI2YTQucG5n.png";
-  static const String deliveredEmailIllustration =
-      "assets/images/email.png";
+  static const String deliveredEmailIllustration = "assets/images/email.png";
 
   static const String ProductSaleIllustration =
       "assets/images/on_boarding_images/NWUyYmEucG5n.png";
-    
+
+  static const String sportIcon = "assets/images/categories/bowling.png";
 }
