@@ -5,6 +5,8 @@ import 'package:iconsax/iconsax.dart';
 
 import 'package:onlinemarket/common/widget/custom_shapes/containers/onlineShopHomeHeaders.dart';
 import 'package:onlinemarket/common/widget/custom_shapes/containers/search_container.dart';
+import 'package:onlinemarket/common/widget/layout/grid_layout.dart';
+import 'package:onlinemarket/common/widget/product/product%20cards/product_card_vertical.dart';
 import 'package:onlinemarket/common/widget/texts/section_heading.dart';
 import 'package:onlinemarket/features/shop/screens/widgets/appbar.dart';
 import 'package:onlinemarket/features/shop/screens/widgets/home_categories.dart';
@@ -17,11 +19,11 @@ class HomeMode extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Scaffold(
+    return Scaffold(
       body: SingleChildScrollView(
         child: Column(
           children: [
-             onlineShopHeader(
+            onlineShopHeader(
               child: Column(
                 children: [
                   onlineShopAppbarHome(),
@@ -36,8 +38,8 @@ class HomeMode extends StatelessWidget {
                     height: onlineShopSizes.defaultSpace,
                   ),
                   Padding(
-                    padding: EdgeInsets.only(
-                        left: onlineShopSizes.defaultSpace),
+                    padding:
+                        EdgeInsets.only(left: onlineShopSizes.defaultSpace),
                     child: Column(
                       children: [
                         onlineShopSectionHeading(
@@ -55,14 +57,25 @@ class HomeMode extends StatelessWidget {
               ),
             ),
             Padding(
-              padding:  EdgeInsets.all(onlineShopSizes.defaultSpace),
-              child: onlineShopPromoSlider(banners:[onlineShopImages.barrners_1,onlineShopImages.barrners_2,onlineShopImages.barrners_3,]),
+              padding: EdgeInsets.all(onlineShopSizes.defaultSpace),
+              child: Column(
+                children: [
+                const onlineShopPromoSlider(banners: [
+                    onlineShopImages.barrners_1,
+                    onlineShopImages.barrners_2,
+                    onlineShopImages.barrners_3,
+                  ]),
+                const  SizedBox(
+                    height: onlineShopSizes.spaceBtwSections,
+                  ),
+                  onlineShopGridLayout(itemBuilder: (_,index)=>const onlineShopProductCardVertical(),itemCount: 4,),
+                ],
+              ),
             ),
-           
-           
           ],
         ),
       ),
     );
   }
 }
+

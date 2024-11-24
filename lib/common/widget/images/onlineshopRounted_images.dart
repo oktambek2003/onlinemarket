@@ -11,7 +11,7 @@ class onlineShopRoundedImages extends StatelessWidget {
      this.applyImagesRadius=true,
     this.border,
      this.backgroundColor=onlineShopColors.light,
-    this.fit=BoxFit.contain,
+    this.fit=BoxFit.cover,
     this.padding,
      this.isNetworkImage=false ,
     this.onPress,
