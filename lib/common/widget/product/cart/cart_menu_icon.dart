@@ -17,9 +17,9 @@ class cartCounter extends StatelessWidget {
       children: [
         IconButton(
             onPressed: onPressed,
-            icon: const Icon(
+            icon:  Icon(
               Iconsax.shopping_bag,
-              color: onlineShopColors.white,
+              color: iconColor,
             )),
         Positioned(
           right: 0,

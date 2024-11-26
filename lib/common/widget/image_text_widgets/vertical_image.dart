@@ -35,14 +35,14 @@ class onlineShopVerticalImages extends StatelessWidget {
               decoration: BoxDecoration(
                 color: backgroundColor ??
                     (dark
-                        ? onlineShopColors.black
-                        : onlineShopColors.white),
+                        ? onlineShopColors.white
+                        : onlineShopColors.black),
                 borderRadius: BorderRadius.circular(100),
               ),
               child: Image(
                 image: AssetImage(image),
                 fit: BoxFit.cover,
-                color:  dark?onlineShopColors.light:onlineShopColors.dark,
+                color:  onlineShopColors.dark,
               ),
             ),
             const SizedBox(

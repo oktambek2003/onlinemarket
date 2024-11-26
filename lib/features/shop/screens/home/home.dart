@@ -8,9 +8,9 @@ import 'package:onlinemarket/common/widget/custom_shapes/containers/search_conta
 import 'package:onlinemarket/common/widget/layout/grid_layout.dart';
 import 'package:onlinemarket/common/widget/product/product%20cards/product_card_vertical.dart';
 import 'package:onlinemarket/common/widget/texts/section_heading.dart';
-import 'package:onlinemarket/features/shop/screens/widgets/appbar.dart';
-import 'package:onlinemarket/features/shop/screens/widgets/home_categories.dart';
-import 'package:onlinemarket/features/shop/screens/widgets/home_slider.dart';
+import 'package:onlinemarket/features/shop/screens/home/appbar.dart';
+import 'package:onlinemarket/features/shop/screens/home/home_categories.dart';
+import 'package:onlinemarket/features/shop/screens/home/home_slider.dart';
 import 'package:onlinemarket/utils/constants/images_string.dart';
 import 'package:onlinemarket/utils/constants/sizes.dart';
 
@@ -26,30 +26,31 @@ class HomeMode extends StatelessWidget {
             onlineShopHeader(
               child: Column(
                 children: [
-                  onlineShopAppbarHome(),
-                  SizedBox(
+                  const onlineShopAppbarHome(),
+                  const SizedBox(
                     height: onlineShopSizes.spaceBtwSections,
                   ),
-                  onlineshopHomeSearch(
+                  const onlineshopHomeSearch(
                     text: 'Search in Storage',
                     icon: Iconsax.search_normal,
                   ),
-                  SizedBox(
+                  const SizedBox(
                     height: onlineShopSizes.defaultSpace,
                   ),
                   Padding(
-                    padding:
-                        EdgeInsets.only(left: onlineShopSizes.defaultSpace),
+                    padding: const EdgeInsets.only(
+                        left: onlineShopSizes.defaultSpace),
                     child: Column(
                       children: [
                         onlineShopSectionHeading(
                           title: 'Popular Categories',
                           showActoinButtom: false,
+                          onPressed: () {},
                         ),
-                        SizedBox(
+                        const SizedBox(
                           height: onlineShopSizes.spaceBtwItem,
                         ),
-                        onlineShopHomeCategories(),
+                        const onlineShopHomeCategories(),
                       ],
                     ),
                   )
@@ -57,18 +58,24 @@ class HomeMode extends StatelessWidget {
               ),
             ),
             Padding(
-              padding: EdgeInsets.all(onlineShopSizes.defaultSpace),
+              padding: const EdgeInsets.all(onlineShopSizes.defaultSpace),
               child: Column(
                 children: [
-                const onlineShopPromoSlider(banners: [
+                  const onlineShopPromoSlider(banners: [
                     onlineShopImages.barrners_1,
                     onlineShopImages.barrners_2,
                     onlineShopImages.barrners_3,
                   ]),
-                const  SizedBox(
+                  const SizedBox(
                     height: onlineShopSizes.spaceBtwSections,
                   ),
-                  onlineShopGridLayout(itemBuilder: (_,index)=>const onlineShopProductCardVertical(),itemCount: 4,),
+                  onlineShopSectionHeading(title: "Popular Product",onPressed: (){},),
+                  SizedBox(height: onlineShopSizes.spaceBtwItem,),
+                  onlineShopGridLayout(
+                    itemBuilder: (_, index) =>
+                        const onlineShopProductCardVertical(),
+                    itemCount: 4,
+                  ),
                 ],
               ),
             ),
@@ -78,4 +85,3 @@ class HomeMode extends StatelessWidget {
     );
   }
 }
-

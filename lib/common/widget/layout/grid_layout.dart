@@ -20,10 +20,12 @@ class onlineShopGridLayout extends StatelessWidget {
       physics: const NeverScrollableScrollPhysics(),
       gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
           crossAxisCount: 2,
+          mainAxisExtent: mainAxisExtend,
           crossAxisSpacing: onlineShopSizes.gridViewSpacing,
           mainAxisSpacing: onlineShopSizes.gridViewSpacing,
-          mainAxisExtent: 288),
+        ),
       itemBuilder: itemBuilder,
+      
     );
   }
 }

@@ -5,6 +5,7 @@ import 'package:onlinemarket/common/widget/container_routed/rouded_container.dar
 import 'package:onlinemarket/common/widget/icon/circular_icon.dart';
 import 'package:onlinemarket/common/widget/images/onlineshopRounted_images.dart';
 import 'package:onlinemarket/common/widget/product/priceText/price_text.dart';
+import 'package:onlinemarket/common/widget/texts/brand_title_text_vefield_icon.dart';
 import 'package:onlinemarket/common/widget/texts/product_title.dart';
 import 'package:onlinemarket/utils/constants/colors.dart';
 import 'package:onlinemarket/utils/constants/images_string.dart';
@@ -69,21 +70,28 @@ class onlineShopProductCardVertical extends StatelessWidget {
               ),
             ),
           const  SizedBox(height: onlineShopSizes.spaceBtwItem/2,),
-             Padding(padding:const EdgeInsets.only(left: onlineShopSizes.sm),
-                    child:Column(
+
+          const   Padding(padding: EdgeInsets.only(left: onlineShopSizes.sm),
+                    child: Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
-                   const    onlineShopProductTitle(title: "Green Nike Air Shoes",smallSize: true,),
-                      const SizedBox(height: onlineShopSizes.spaceBtwItem/2,),
-                       Row(children: [
-                        Text('NIke',overflow: TextOverflow.ellipsis,maxLines: 1,style: Theme.of(context).textTheme.labelMedium,),
-                      const  SizedBox(width: onlineShopSizes.xs,),
-                       const Icon(Iconsax.verify5,color: onlineShopColors.primary,size: onlineShopSizes.iconXs,)
-                       ],),
+                       onlineShopProductTitle(title: "Green Nike Air Shoes",smallSize: true,),
+                       SizedBox(height: onlineShopSizes.spaceBtwItem/2,),
+                       onlineShopBrandtitleWithVerifieldIcon(title: "Nike",),
+                    
+                      ],
+                    ) ,
+                    ),
+                    const   Spacer(),
+
+
                        Row(
                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
                         children: [
-                        const  onlineShopProducrPriceText(price:"35",isLarge: true, ),
+                      const  Padding(
+                          padding:  EdgeInsets.only(left: onlineShopSizes.sm),
+                          child:   onlineShopProducrPriceText(price:"35.0",isLarge: true, ),
+                        ),
                           Container(decoration:const BoxDecoration(color: onlineShopColors.dark,
                           borderRadius: BorderRadius.only(
                             topLeft: Radius.circular(onlineShopSizes.cardRadiusMd),
@@ -96,9 +104,6 @@ class onlineShopProductCardVertical extends StatelessWidget {
                           )
                         ],
                        )
-                      ],
-                    ) ,
-                    )
           ],
         ),
       ),

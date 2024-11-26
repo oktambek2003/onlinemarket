@@ -79,4 +79,7 @@ class onlineShopImages {
       "assets/images/products/101bf08103cb2dd8e01bd9139c3db0f7.webp";
   static const String products22 =
       "assets/images/products/afdf182c-14db-431d-937f-8c720867e53f.webp";
+
+  //Store Icon
+  static const String colthIcon = "assets/icons/brends/37736.webp";
 }
