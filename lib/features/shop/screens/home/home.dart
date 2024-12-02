@@ -2,7 +2,6 @@
 
 import 'package:flutter/material.dart';
 import 'package:iconsax/iconsax.dart';
-
 import 'package:onlinemarket/common/widget/custom_shapes/containers/onlineShopHomeHeaders.dart';
 import 'package:onlinemarket/common/widget/custom_shapes/containers/search_container.dart';
 import 'package:onlinemarket/common/widget/layout/grid_layout.dart';
