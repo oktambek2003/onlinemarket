@@ -11,7 +11,7 @@ class onlineShopVerticalImages extends StatelessWidget {
     required this.image,
     required this.title,
     this.textColor = onlineShopColors.white,
-    this.backgroundColor = onlineShopColors.white,
+    this.backgroundColor ,
     this.onTap,
   });
   final String image, title;

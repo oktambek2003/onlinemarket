@@ -82,4 +82,7 @@ class onlineShopImages {
 
   //Store Icon
   static const String colthIcon = "assets/icons/brends/37736.webp";
+
+  //user images
+  static const String user = "assets/images/user/icon-5359553_640.webp";
 }

@@ -4,7 +4,8 @@ import 'package:onlinemarket/common/widget/custom_shapes/cured_edges/curred_edge
 import 'package:onlinemarket/utils/constants/colors.dart';
 
 class onlineShopHeader extends StatelessWidget {
-  const onlineShopHeader({ required this.child,
+  const onlineShopHeader({
+    required this.child,
     super.key,
   });
   final Widget child;
@@ -14,30 +15,24 @@ class onlineShopHeader extends StatelessWidget {
       child: Container(
         color: onlineShopColors.primary,
         padding: const EdgeInsets.all(0),
-        child: SizedBox(
-          height: 400,
-          child: Stack(
-            children: [
-              Positioned(
-                right: -250,
-                top: -150,
-          
-                child: onlineShopCirclular(
-                  backgroundColor: onlineShopColors.textWhite.withOpacity(0.1),
-                ),
+        child: Stack(
+          children: [
+            Positioned(
+              right: -250,
+              top: -150,
+              child: onlineShopCirclular(
+                backgroundColor: onlineShopColors.textWhite.withOpacity(0.1),
               ),
-          
-              Positioned
-              (
-                top: 100,
-                right: -300,
-                child: onlineShopCirclular(
-                  backgroundColor: onlineShopColors.textWhite.withOpacity(0.1),
-                ),
+            ),
+            Positioned(
+              top: 100,
+              right: -300,
+              child: onlineShopCirclular(
+                backgroundColor: onlineShopColors.textWhite.withOpacity(0.1),
               ),
-              child
-            ],
-          ),
+            ),
+            child
+          ],
         ),
       ),
     );

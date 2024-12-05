@@ -1,8 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:iconsax/iconsax.dart';
+import 'package:onlinemarket/features/personalization/screens/settings/settings.dart';
 import 'package:onlinemarket/features/shop/screens/home/home.dart';
 import 'package:onlinemarket/features/shop/screens/storage/storage.dart';
+import 'package:onlinemarket/features/shop/screens/wishing/wishing.dart';
 import 'package:onlinemarket/utils/constants/colors.dart';
 import 'package:onlinemarket/utils/helpers/helper_function.dart';
 
@@ -45,11 +47,7 @@ class NavigattionController extends GetxController {
    const HomeMode(),
     const onlineShopStorage(),
     
-    Container(
-      color: Colors.orange,
-    ),
-    Container(
-      color: Colors.blue,
-    )
+  const onlineShopFavoriteScreen(),
+   const onlineShopSettingsScreen()
   ];
 }
