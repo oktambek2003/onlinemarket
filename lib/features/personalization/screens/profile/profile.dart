@@ -4,7 +4,6 @@ import 'package:onlinemarket/common/widget/appbar/appbar.dart';
 import 'package:onlinemarket/common/widget/images/circular_image.dart';
 import 'package:onlinemarket/common/widget/texts/section_heading.dart';
 import 'package:onlinemarket/features/personalization/screens/profile/widgets/profile_menu.dart';
-import 'package:onlinemarket/features/shop/screens/home/appbar.dart';
 import 'package:onlinemarket/utils/constants/images_string.dart';
 import 'package:onlinemarket/utils/constants/sizes.dart';
 import 'package:onlinemarket/utils/helpers/helper_function.dart';
@@ -16,7 +15,7 @@ class onlineShopProfileScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     final dark = onlineShopFunction.isDarkMode(context);
     return Scaffold(
-      appBar: OnlineShopAppBar(
+      appBar:const OnlineShopAppBar(
         showBackArrow: true,
         title: Text("Profile"),
       ),
@@ -71,7 +70,7 @@ class onlineShopProfileScreen extends StatelessWidget {
             profileMenu(onTap: (){}, title: "Data Birthday", value: "12.02.2003"),
             const Divider(),
             const   SizedBox(height: onlineShopSizes.spaceBtwItem,),
-            Center(child: TextButton(onPressed: (), child: Text("Close Accunt",style: TextStyle(color: Colors.red),)),)
+            Center(child: TextButton(onPressed: (){}, child:const Text("Close Accunt",style: TextStyle(color: Colors.red),)),)
 
             ],
           ),
