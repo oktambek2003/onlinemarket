@@ -27,11 +27,11 @@ class onlineShopCircularIcon extends StatelessWidget {
       width: widht,
       height: height,
       decoration: BoxDecoration(
-          // color: backgroundcolor != null
-          //     ? backgroundcolor!
-          //     : onlineShopFunction.isDarkMode(context)
-          //         ? onlineShopColors.black.withOpacity(0.9)
-          //         : onlineShopColors.white.withOpacity(0.9),
+          color: backgroundcolor != null
+              ? backgroundcolor!
+              : onlineShopFunction.isDarkMode(context)
+                  ? onlineShopColors.black.withOpacity(0.9)
+                  : onlineShopColors.white.withOpacity(0.9),
                   borderRadius: BorderRadius.circular(100)
                   ),
                   child: IconButton(onPressed: onPressed, icon: Icon(icon,color:color ,size: size,)),
