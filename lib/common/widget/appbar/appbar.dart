@@ -1,8 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:iconsax/iconsax.dart';
+import 'package:onlinemarket/utils/constants/colors.dart';
 import 'package:onlinemarket/utils/constants/sizes.dart';
 import 'package:onlinemarket/utils/device/device_utils.dart';
+import 'package:onlinemarket/utils/helpers/helper_function.dart';
 
 class OnlineShopAppBar extends StatelessWidget implements PreferredSizeWidget {
   const OnlineShopAppBar(
@@ -25,6 +27,7 @@ class OnlineShopAppBar extends StatelessWidget implements PreferredSizeWidget {
         automaticallyImplyLeading: false,
         leading: showBackArrow
             ? IconButton(
+              color: onlineShopFunction.isDarkMode(context)?onlineShopColors.white:onlineShopColors.black,
                 onPressed: () => Get.back(),
                 icon: const Icon(Iconsax.arrow_left))
             :leadingIcon!=null? IconButton(onPressed: () => leadingOnPress, icon: Icon(leadingIcon)
